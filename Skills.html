@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPage Grid</title>
+    <link rel="stylesheet" href="css/style_skills.css">
+    <link rel="font" href="images/AlexBrush-Regular.ttf">
+</head>
+<body>
+    <div class="header-elements">
+        <div class="header-elements-wrapper">
+            <h3 class="header-elements-greeting">Nice to see you there!</h3>
+            <nav class="navigation-bar">
+                <ul>
+                    <li class="navigation-bar-element"><a href="index.html">Main</a></li>
+                    <li class="navigation-bar-element"><a href="Skills.html">Skills</a></li>
+                    <li class="navigation-bar-element"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h2>Frontend skills</h2>
+                <p>I'm interested in building web-sites using my JS/HTML5/CSS3 skills. For this purpose, I also knew how to use SASS, Flexbox/GRID layouts, Figma/Photoshop.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Backend skills</h2>
+                <p>Sometimes it is even more challenging to work with a Backend part. I really like to work with Node.js, ReactJS, Webpack/Babel and interested to develop my skills to work with it more efficiently.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Soft skills</h2>
+                <p>To learn a new language or work using foreign language has never been a problem for me. I learn English very well, a little bit of Spanish and German.</p>
+            </div>
+        </div>
+    </div>
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" id="turbulence" baseFrequency="0.01" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.01;0.05;0.01" repeatCount="indefinite" />
+            </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" scale="30" />
+        </filter>
+    </svg>
+    </section>
+        <footer>
+            <p>Created in 2020</p>
+        </footer>
+</body>
+</html>

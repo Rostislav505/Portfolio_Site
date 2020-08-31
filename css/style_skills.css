@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:ital,wght@1,300&display=swap');
+
+    
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*SCROLLBAR*/
+
+::-webkit-scrollbar
+{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(transparent, black);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: linear-gradient(transparent, #1d2a2e);
+    border-radius: 20px;
+}
+
+/*HEADER*/
+
+.header-elements
+{
+    background: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.header-elements-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Helvetica';
+}
+
+.header-elements-wrapper h3[class="header-elements-greeting"]
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    color: white;
+}
+
+.navigation-bar
+{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation-bar ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-bar ul .navigation-bar-element
+{
+    margin: 5px 10px;
+    color: white;
+    list-style: none;
+}
+
+/*Links*/
+
+
+a 
+{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 40px 10px;
+}
+
+a:hover
+{
+    color: black;
+    padding: 20px;
+    margin: 5px;
+    background-color: #50C878;
+    border-radius: 40px 10px;
+}
+
+/*FOOTER*/
+
+footer
+{
+    padding: 20px;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Helvetica';
+}
+
+/*Block of Skills*/
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 50px;
+    align-items: center;
+    transition: 0.5s;
+}
+.container:hover .box 
+{
+    opacity: 0.1;
+    transform: scale(0.9);
+    filter: blur(5px);
+}
+.container .box:hover 
+{
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+.container .box:before
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    filter: url(#wavy);
+}
+.container .box:nth-child(1):before
+{
+    background: black;
+}
+.container .box:nth-child(2):before
+{
+    background: black;
+}
+.container .box:nth-child(3):before
+{
+    background: black;
+}
+
+.container .box .content
+{
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: 0.5s;
+}
+
+.container .box .content h2 
+{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+svg
+{
+    width: 0;
+    height: 0;
+}
